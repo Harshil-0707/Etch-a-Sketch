@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Etch-a-Sketch</title>
+  </head>
+  <body>
+    <h1>Etch-a-Sketch</h1>
+    <div id="container">
+      <div class="clrs-settings">
+        <p class="colorHeading">Choose Color</p>
+        <input type="color" value="#000" />
+        <p class="GridRangeHeading">Choose grid size</p>
+        <input type="range" name="range" start="1" end="100" id="gridRange" />
+        <input type="button" name="clear" id="clearGridBtn" value="Clear" />
+      </div>
+      <div id="innerContainer"></div>
+    </div>
+  </body>
+  <script src="./main.js"></script>
+</html>

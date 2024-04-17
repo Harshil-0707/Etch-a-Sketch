@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+#container {
+  display: flex;
+}
+
+#innerContainer {
+  display: flex;
+}
+
+.gridRow {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
+
+.gridCol {
+  width: 20px;
+  height: 20px;
+  border: 1px solid black;
+}
