@@ -1,21 +1,27 @@
+const btns = document.querySelectorAll(".btn");
 const rows = document.querySelector(".gridRow");
 const cols = document.querySelector(".gridCol");
+const gridRange = document.querySelector("#gridRange");
+const pickColor = document.querySelector(".pickColor");
 const container = document.querySelector("#innerContainer");
+const GridRangeValue = document.querySelector(".GridRangeHeading");
 
-// TODO : Fix grid row and column bug
+btns[0].classList.add("foucs-cls");
+GridRangeValue.textContent = `${gridRange.value} X ${gridRange.value}`;
 
-// function makRows(totalRows) {
-//   for (let i = 0; i < totalRows; i++) {
-//     let row = document.createElement("div");
-//     container.appendChild(row).className = "gridRow";
-//   }
-// }
+btns.forEach((btn) => {
+  btn.addEventListener("click", (e) => {
+    btns.forEach((btn) => {
+      btn.classList.remove("foucs-cls");
+    });
+    e.currentTarget.classList.add("foucs-cls");
+  });
+});
 
-// function makeCols(totalCols) {
-//   for (let j = 0; j < totalCols; j++) {
-//     let col = document.createElement("div");
-//     container.appendChild(col).className = "gridCol";
-//   }
-// }
-// makRows(16);
-// makeCols(16);
+gridRange.onchange = (e) => {
+  changeGridSize(e.currentTarget.value);
+};
+
+function changeGridSize(gridSize) {
+  GridRangeValue.textContent = `${gridSize} x ${gridSize}`;
+}

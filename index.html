@@ -10,11 +10,34 @@
     <h1>Etch-a-Sketch</h1>
     <div id="container">
       <div class="clrs-settings">
-        <p class="colorHeading">Choose Color</p>
-        <input type="color" value="#000" />
-        <p class="GridRangeHeading">Choose grid size</p>
-        <input type="range" name="range" start="1" end="100" id="gridRange" />
-        <input type="button" name="clear" id="clearGridBtn" value="Clear" />
+        <div class="colorInput">
+          <input type="color" value="#333333" class="pickColor" />
+        </div>
+        <input
+          type="button"
+          name="colorMode"
+          class="colorMode btn"
+          value="color mode"
+        />
+        <input type="button" name="erase" value="Eraser" class="eraser btn" />
+        <input
+          type="button"
+          name="clear"
+          id="clearGridBtn"
+          class="btn"
+          value="Clear Grid"
+        />
+        <div class="GridRangeSettings">
+          <p class="GridRangeHeading"></p>
+          <input
+            type="range"
+            name="range"
+            value="16"
+            min="1"
+            max="64"
+            id="gridRange"
+          />
+        </div>
       </div>
       <div id="innerContainer"></div>
     </div>
