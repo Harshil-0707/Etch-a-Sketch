@@ -19,6 +19,7 @@ GridRangeValue.textContent = `${gridRange.value} X ${gridRange.value}`;
   fillGridColor();
 })();
 
+// Fill grid with color on mouse click and and on mouse down to make hold effect
 function fillGridColor() {
   const gridCell = document.querySelectorAll(".gridCell");
   val = gridCell;

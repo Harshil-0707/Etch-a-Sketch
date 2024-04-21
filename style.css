@@ -94,7 +94,24 @@ input[type="range"] {
   border: 1px solid var(--black-clr);
 }
 
+input[type="range"]::-moz-range-track {
+  height: 1rem;
+  border-radius: 40rem;
+  background: var(--white-bg);
+  border: 1px solid var(--black-clr);
+}
+
 input[type="range"]::-webkit-slider-thumb {
+  width: 2.5rem;
+  height: 2.5rem;
+  appearance: none;
+  border-radius: 50%;
+  margin: -12px 0 -12px 0;
+  -webkit-appearance: none;
+  background-color: var(--hover-bg-clr);
+}
+
+input[type="range"]::-moz-range-thumb {
   width: 2.5rem;
   height: 2.5rem;
   appearance: none;
