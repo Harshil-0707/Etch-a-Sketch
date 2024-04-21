@@ -30,12 +30,12 @@ h1 {
   font-size: 4rem;
   font-weight: 600;
   text-align: center;
-  margin-block: 1.5rem 1rem;
+  margin-block: 1.5rem 1.5rem;
 }
 
 #container {
   display: flex;
-  margin-left: 4rem;
+  margin-left: 8.3rem;
 }
 
 .clrs-settings {
@@ -73,6 +73,7 @@ input:hover {
   height: 90px;
   overflow: hidden;
   border-radius: 200rem;
+  box-shadow: 0px 0px 21px -3px var(--box-shadow-clr);
 }
 
 input[type="color"] {
