@@ -82,6 +82,11 @@ function createGrid(gridSize) {
 // Remove color from clicked grid cell
 function erase(gridCell) {
   gridCell.forEach(function (gc) {
+    gc.addEventListener("mouseenter", (e) => {
+      if (mouseDown === true) {
+        e.currentTarget.style.backgroundColor = "transparent";
+      }
+    });
     gc.addEventListener("click", (e) => {
       e.currentTarget.style.backgroundColor = "transparent";
     });
